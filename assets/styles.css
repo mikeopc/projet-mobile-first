@@ -818,7 +818,7 @@ figure img {
 
 }
 
-@media (min-width:1024px) {
+@media (min-width:1080px) {
 
 
     body {
@@ -1599,7 +1599,7 @@ figure img {
 
 }
 
-@media (max-width:1023px) and (min-width: 768px) {
+@media (max-width:1079px) and (min-width: 768px) {
 
 
 
@@ -1616,12 +1616,12 @@ figure img {
     /* section fonctionnement */
 
 
-
     .section-title {
         position: relative;
         bottom: 90px;
-        left: 50%;
-
+        padding-left: 15px;
+        width: 100%;
+        margin-top: -30px;
 
     }
 
@@ -1629,17 +1629,21 @@ figure img {
 
     .number {
 
-        position: relative;
-        left: 15px;
-        top: 1px;
+        position: absolute;
+        left: -10px;
+        top: 17px;
         border-radius: 20px;
         background-color: #9356DC;
-        min-width: 20px;
+        width: 20px;
+        height: 20px;
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
         padding: 3px;
         color: #F7F7F7;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
     }
 
@@ -1648,43 +1652,55 @@ figure img {
     .menu {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        flex-wrap: wrap;
+        padding: 5%;
         margin-top: 90px;
-        margin-bottom: 60px;
-        position: relative;
-        right: 30%;
-
+        margin-bottom: -40px;
+        justify-content: center;
+        white-space: nowrap;
 
 
     }
+
+
+
 
 
     .flex-border {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         gap: 20px;
         background: #F7F7F7;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
         border-radius: 20px;
-        padding: 5px 40px;
+        width: 30%;
+        height: 60px;
         white-space: nowrap;
-
-
+        position: relative;
+        margin: 11px;
+        margin-top: -90px;
+        
     }
 
     .icon-color {
         color: #7E7E7E;
         height: 35px;
-        margin-left: 30px;
-
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
     }
 
     .icon-color2 {
         color: #9356DC;
         height: 35px;
-        margin-left: 30px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
     }
+
+    
 
 
 
@@ -1692,8 +1708,9 @@ figure img {
         font-family: 'Roboto', sans-serif;
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 13px;
         color: #000000;
+        margin-left: -10px;
     }
 
 
@@ -1712,7 +1729,7 @@ figure img {
         line-height: 28px;
         color: #000000;
         margin-top: 30px;
-
+        padding-right: 550px;
 
 
     }
@@ -1863,6 +1880,145 @@ figure img {
 
 
     }
+    .entrées {
+
+        animation: slide 2000ms linear 0s;
+
+    }
+
+    .plats {
+        animation-name: slide;
+        animation-duration: 2000ms;
+
+
+    }
+
+    .desserts {
+        animation-name: slide;
+        animation-duration: 2000ms;
+
+
+    }
+
+
+    @keyframes slide {
+        from {
+
+            opacity: 0;
+            width: 50%;
+
+        }
+
+        to {
+
+            opacity: 1;
+            width: 100%;
+        }
+
+
+    }
+
+    .card-description {
+        display: flex;
+        align-content: space-around;
+        align-items: center;
+        min-width: 100%;
+        transition-duration: 1s;
+        flex-wrap: wrap;
+        height: 60px;
+    }
+
+    .check-box {
+        border-radius: 0px 15px 15px 0px;
+        background-color: #99E2D0;
+        min-width: 60px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .check-center {
+        display: flex;
+        color: #FFFFFF;
+
+    }
+
+    .card-restaurant:hover .card-description {
+        cursor: pointer;
+        min-width: calc(100% - 60px);
+
+
+    }
+
+    .card-restaurant:hover .card-p {
+        overflow: hidden;
+        width: calc(100% - 60px);
+        text-overflow: ellipsis;
+
+
+
+    }
+
+
+
+    .card-title {
+        font-family: 'Roboto' sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        color: #000000;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+    }
+
+
+    .card-p {
+
+        font-family: 'Roboto' sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        color: #000000;
+        white-space: nowrap;
+        margin: 0;
+        width: calc(100% - 60px);
+        transition: all 2s;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+    }
+
+
+
+    .card-price {
+        background-color: #FFFFFF;
+        position: sticky;
+        left: 265%;
+        bottom: 8px;
+        margin-right: 10px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        color: #353535;
+
+
+    }
+
+
+
+    .card-title,
+    .card-p {
+        height: 18px;
+        margin-left: 15px;
+
+
+    }
 
     .title-card-restaurant {
         display: flex;
@@ -1928,7 +2084,44 @@ figure img {
 
 
 
+    .section-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        margin-left: -80px;
 
+    }
+
+    .footer-color {
+        background-color: #353535;
+        padding-top: 10px;
+        margin-top: 70px;
+
+
+    }
+
+    .section-footer h3 {
+        position: relative;
+        bottom: 8px;
+        left: 80%;
+        color: #F7F7F7;
+    }
+
+    .section-footer a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-family: 'Roboto' sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 19px;
+        
+    }
+
+     .i-color2 {
+        margin-right: 20px;
+    }
 
 
 
