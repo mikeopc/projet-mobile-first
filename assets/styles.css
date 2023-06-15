@@ -991,7 +991,7 @@ figure img {
         margin-bottom: -40px;
         justify-content: center;
         white-space: nowrap;
-
+        
 
     }
 
@@ -1012,7 +1012,7 @@ figure img {
         height: 65px;
         white-space: nowrap;
         position: relative;
-        margin: 8px;
+        margin: 15px;
         margin-top: -90px;
 
     }
@@ -1020,7 +1020,7 @@ figure img {
     .icon-color {
         color: #7E7E7E;
         height: 35px;
-        margin-left: 2%;
+        margin-left: 5%;
         display: flex;
         align-items: center;
     }
@@ -1028,12 +1028,12 @@ figure img {
     .icon-color2 {
         color: #9356DC;
         height: 35px;
-        margin-left: 2%;
+        margin-left: 5%;
         display: flex;
         align-items: center;
     }
 
-
+   
 
 
     .text-color {
@@ -1062,7 +1062,7 @@ figure img {
         margin-top: 30px;
         position: relative;
         padding-right: 52%;
-
+        
 
 
     }
@@ -1074,13 +1074,14 @@ figure img {
         align-items: center;
         padding-bottom: 50px;
         gap: 15px;
-
+        
 
     }
 
     .cards a {
         height: 220px;
     }
+    
 
 
     .card {
